@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Ardıç Butik: Şahinbey’de hazır giyim butiği; sezon kataloğu, beden cetveli, ücretsiz prova ve tadilat. Demo site; içerik kurgusaldır.",
+    "en": "Ardic Butik: a ready-to-wear boutique in Sahinbey with a season catalogue, size chart, free fittings and alterations. Demo site; content is fictional.",
+    "ar": "أرديتش بوتيك: متجر ملابس جاهزة في شاهين بيه؛ كتالوج الموسم وجدول المقاسات وقياس وتعديل مجانيان. موقع تجريبي؛ المحتوى افتراضي."
+  },
+  "keyword": {
+    "tr": "butik, hazır giyim, beden tablosu, prova, tadilat, Gaziantep",
+    "en": "boutique, ready-to-wear, size chart, fitting, alterations, Gaziantep",
+    "ar": "بوتيك، ملابس جاهزة، جدول المقاسات، قياس، تعديل، غازي عنتاب"
+  },
+  "category": "Kurumsal",
+  "name": "Ardıç Butik",
+  "domain": "butik-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "noto-sans",
+    "heading": "dm-serif-display",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#6B7A2A",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "4px",
+    "--mx-radius-md": "6px",
+    "--mx-radius-lg": "8px",
+    "--mx-radius-xl": "11px"
+  },
+  "icon": "icon.png"
+}

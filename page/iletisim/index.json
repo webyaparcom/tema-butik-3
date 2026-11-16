@@ -1,0 +1,47 @@
+{
+  "name": {
+    "tr": "Konum",
+    "en": "Location",
+    "ar": "الموقع"
+  },
+  "status": "play",
+  "category": "s9vsdb3q7s",
+  "id": "iletisim",
+  "url": "",
+  "path": "iletisim",
+  "index": 3,
+  "icon": "call",
+  "desing": {
+    "header": [],
+    "body": [
+      "nm7ed2",
+      "k8mp01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Butik adresi, saatler ve harita.",
+    "en": "Boutique address, hours and map.",
+    "ar": "عنوان البوتيك والساعات والخريطة."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Konum",
+    "en": "Location",
+    "ar": "الموقع"
+  },
+  "keyword": {
+    "tr": "iletişim",
+    "en": "contact",
+    "ar": "اتصال"
+  },
+  "text": {},
+  "update": "2026-11-16T20:27:22.539Z",
+  "date": "2026-10-30"
+}

@@ -1,0 +1,93 @@
+<section class="modulex-galeri-ofset-sutun{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-galeri-ofset-sutun-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* galeri-ofset-sutun — Düz ızgara satırı yerine basamaklı (staggered) sütunlar; editoryal moda/yaşam tarzı ritmi, dikey görsellere uygun. */
+  .modulex-galeri-ofset-sutun { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-galeri-ofset-sutun *, .modulex-galeri-ofset-sutun *::before, .modulex-galeri-ofset-sutun *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-galeri-ofset-sutun :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-galeri-ofset-sutun :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-galeri-ofset-sutun :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-galeri-ofset-sutun :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-galeri-ofset-sutun img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-galeri-ofset-sutun) img { height: auto; }
+  .modulex-galeri-ofset-sutun [hidden] { display: none !important; }
+  .modulex-galeri-ofset-sutun :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-galeri-ofset-sutun :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-galeri-ofset-sutun-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-galeri-ofset-sutun-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-galeri-ofset-sutun--bassiz .modulex-galeri-ofset-sutun-bas { display: none; }
+  .modulex-galeri-ofset-sutun-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-galeri-ofset-sutun-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-galeri-ofset-sutun-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-galeri-ofset-sutun-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-galeri-ofset-sutun-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-galeri-ofset-sutun-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-galeri-ofset-sutun-dugme:hover { transform: translateY(-2px); }
+  .modulex-galeri-ofset-sutun-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-galeri-ofset-sutun-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-galeri-ofset-sutun-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-galeri-ofset-sutun-liste { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px clamp(18px, 3vw, 40px); padding-block-end: 80px; }
+  .modulex-galeri-ofset-sutun-oge:nth-child(3n+2) { margin-block-start: 80px; margin-block-end: -80px; }
+  .modulex-galeri-ofset-sutun-kap { overflow: hidden; border-radius: --yuvarlak--; background: --kartBg--; }
+  .modulex-galeri-ofset-sutun-g { width: 100%; aspect-ratio: 3 / 4; height: auto; object-fit: cover; transition: transform 0.8s ease; }
+  .modulex-galeri-ofset-sutun-oge:hover .modulex-galeri-ofset-sutun-g { transform: scale(1.05); }
+  .modulex-galeri-ofset-sutun-alt { display: flex; align-items: baseline; gap: 12px; padding-block-start: 12px; border-block-end: 1px solid --cizgi--; padding-block-end: 10px; }
+  .modulex-galeri-ofset-sutun-no { color: --accentInk--; font-size: 0.8rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .modulex-galeri-ofset-sutun--hazir .modulex-galeri-ofset-sutun-oge { opacity: 0; translate: 0 26px; transition: opacity 0.6s ease calc(var(--s) * 0.08s), translate 0.6s ease calc(var(--s) * 0.08s); }
+  .modulex-galeri-ofset-sutun--gor .modulex-galeri-ofset-sutun-oge { opacity: 1; translate: 0 0; }
+  @media (max-width: 768px) {
+    .modulex-galeri-ofset-sutun-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; padding-block-end: 48px; }
+    .modulex-galeri-ofset-sutun-oge:nth-child(3n+2) { margin: 0; }
+    .modulex-galeri-ofset-sutun-oge:nth-child(even) { margin-block-start: 48px; margin-block-end: -48px; }
+    .modulex-galeri-ofset-sutun-kbaslik { font-size: 0.92rem; }
+  }
+  .modulex-galeri-ofset-sutun-yer { display: grid; place-items: center; width: 100%; aspect-ratio: 4 / 3; background: color-mix(in srgb, --accent-- 14%, --kartBg--); color: --accentInk--; }
+  .modulex-galeri-ofset-sutun-yer .material-symbols-outlined { font-size: 40px; }
+  .modulex-galeri-ofset-sutun-bag { color: inherit; text-decoration: none; }
+  .modulex-galeri-ofset-sutun-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-galeri-ofset-sutun-kbaslik { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+  .modulex-galeri-ofset-sutun-kmetin { color: --muted--; font-size: 0.95rem; line-height: 1.6; }
+  .modulex-galeri-ofset-sutun-kat { color: --accentInk--; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .modulex-galeri-ofset-sutun-kontrol { display: flex; gap: 10px; justify-content: flex-end; margin-block-start: 18px; }
+  .modulex-galeri-ofset-sutun-ok { display: inline-grid; place-items: center; width: 48px; height: 48px; border: 1px solid --cizgi--; border-radius: 50%; background: --kartBg--; color: --text--; transition: background 0.25s ease, color 0.25s ease, opacity 0.25s ease; }
+  .modulex-galeri-ofset-sutun-ok:hover:not(:disabled) { background: --accent--; color: --accentText--; }
+  .modulex-galeri-ofset-sutun-ok:disabled { opacity: 0.4; cursor: default; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-galeri-ofset-sutun :is(.modulex-galeri-ofset-sutun-baslik, .modulex-galeri-ofset-sutun-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-galeri-ofset-sutun-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-galeri-ofset-sutun { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-galeri-ofset-sutun *, .modulex-galeri-ofset-sutun *::before, .modulex-galeri-ofset-sutun *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-galeri-ofset-sutun";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const gozlem = (s, P, az) => {
+        const gor = () => s.classList.add(P + "--gor");
+        s.classList.add(P + "--hazir");
+        if (az || !("IntersectionObserver" in window)) { gor(); return; }
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { gor(); io.disconnect(); } });
+        }, { threshold: 0.15 });
+        io.observe(s);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      gozlem(s, P, az);
+    });
+  })();
+</script>

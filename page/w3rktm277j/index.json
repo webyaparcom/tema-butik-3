@@ -1,0 +1,41 @@
+{
+  "id": "w3rktm277j",
+  "name": {
+    "tr": "Katalog",
+    "en": "Catalogue",
+    "ar": "الكتالوج"
+  },
+  "description": {
+    "tr": "Sonbahar 2026 kataloğu: üst giyim, dış giyim, aksesuar.",
+    "en": "Autumn 2026 catalogue: tops, outerwear, accessories.",
+    "ar": "كتالوج خريف 2026: قطع علوية وملابس خارجية وإكسسوارات."
+  },
+  "keyword": {
+    "tr": "butik kataloğu, hazır giyim",
+    "en": "boutique catalogue, ready-to-wear",
+    "ar": "كتالوج البوتيك، ملابس جاهزة"
+  },
+  "path": "hizmetler",
+  "icon": "checkroom",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "58dr50",
+      "8y284k",
+      "36i73s"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Katalog",
+    "en": "Catalogue",
+    "ar": "الكتالوج"
+  },
+  "date": "2026-11-16T20:26:09.633Z",
+  "update": "2026-11-16T20:27:22.515Z"
+}

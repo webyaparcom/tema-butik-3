@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": "w3rktm277j",
+      "name": {
+        "tr": "Katalog",
+        "en": "Catalogue",
+        "ar": "الكتالوج"
+      },
+      "description": {
+        "tr": "Sonbahar 2026 kataloğu: üst giyim, dış giyim, aksesuar.",
+        "en": "Autumn 2026 catalogue: tops, outerwear, accessories.",
+        "ar": "كتالوج خريف 2026: قطع علوية وملابس خارجية وإكسسوارات."
+      },
+      "path": "hizmetler",
+      "icon": "checkroom",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "58dr50",
+          "8y284k",
+          "36i73s"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "name": {
+        "tr": "Beden",
+        "en": "Sizes",
+        "ar": "المقاسات"
+      },
+      "status": "play",
+      "id": "hakkimizda",
+      "path": "hakkimizda",
+      "category": "",
+      "url": "",
+      "index": 1,
+      "icon": "straighten",
+      "desing": {
+        "header": [],
+        "body": [
+          "a64zwj",
+          "vyzopr"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Göğüs çevresinden beden cetveli ve sık sorulanlar.",
+        "en": "Size chart from bust measurement and FAQ.",
+        "ar": "جدول المقاسات حسب محيط الصدر والأسئلة الشائعة."
+      }
+    },
+    {
+      "id": "s9vsdb3q7s",
+      "name": {
+        "tr": "Prova",
+        "en": "Fitting",
+        "ar": "القياس"
+      },
+      "description": {
+        "tr": "WhatsApp ya da e-postayla prova talebi (demo form).",
+        "en": "Fitting request on WhatsApp or by e-mail (demo form).",
+        "ar": "طلب قياس عبر واتساب أو البريد (نموذج تجريبي)."
+      },
+      "path": "teklif-al",
+      "icon": "event",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "nm7ed2",
+          "ap6d0z"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "name": {
+        "tr": "Konum",
+        "en": "Location",
+        "ar": "الموقع"
+      },
+      "status": "play",
+      "id": "iletisim",
+      "path": "iletisim",
+      "category": "s9vsdb3q7s",
+      "url": "",
+      "index": 3,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "nm7ed2",
+          "k8mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Butik adresi, saatler ve harita.",
+        "en": "Boutique address, hours and map.",
+        "ar": "عنوان البوتيك والساعات والخريطة."
+      }
+    }
+  ],
+  "desc": []
+}

@@ -1,0 +1,122 @@
+<section class="modulex-ayakkabi-numara-cetveli{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ayakkabi-numara-cetveli-ic">
+    {{fbbas}}
+    {{fbgovde}}
+  </div>
+</section>
+
+<style>
+  /* ayakkabi-numara-cetveli — ders-programi-tablo ve kargo-desi-hesap'ın satır yönlü tablolarından farkı: devrik (sütun = numara) ve yapışkan satır başlıklı ölçü tablosu, girişten türeyen sütun vurgusu ve kaydırma; body/yuzuk-olcu-rehberi'nin yüzük çapı çizimi yerine ayak uzunluğu → numara eşlemesi. */
+  .modulex-ayakkabi-numara-cetveli { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ayakkabi-numara-cetveli *, .modulex-ayakkabi-numara-cetveli *::before, .modulex-ayakkabi-numara-cetveli *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ayakkabi-numara-cetveli :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ayakkabi-numara-cetveli :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ayakkabi-numara-cetveli :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ayakkabi-numara-cetveli :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ayakkabi-numara-cetveli img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ayakkabi-numara-cetveli) img { height: auto; }
+  .modulex-ayakkabi-numara-cetveli [hidden] { display: none !important; }
+  .modulex-ayakkabi-numara-cetveli :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ayakkabi-numara-cetveli :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ayakkabi-numara-cetveli-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ayakkabi-numara-cetveli-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ayakkabi-numara-cetveli--bassiz .modulex-ayakkabi-numara-cetveli-bas { display: none; }
+  .modulex-ayakkabi-numara-cetveli-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ayakkabi-numara-cetveli-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ayakkabi-numara-cetveli-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ayakkabi-numara-cetveli-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ayakkabi-numara-cetveli-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ayakkabi-numara-cetveli-dugme:hover { transform: translateY(-2px); }
+  .modulex-ayakkabi-numara-cetveli-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ayakkabi-numara-cetveli-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ayakkabi-numara-cetveli-dugme .material-symbols-outlined { font-size: 20px; }
+
+  .modulex-ayakkabi-numara-cetveli-giris { display: grid; gap: 14px; max-width: 720px; margin-block-end: 26px; }
+  .modulex-ayakkabi-numara-cetveli-olcum { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(18px, 3vw, 36px); align-items: stretch; margin-block-end: 26px; }
+  .modulex-ayakkabi-numara-cetveli--js .modulex-ayakkabi-numara-cetveli-olcum { grid-template-columns: minmax(240px, 320px) minmax(0, 1fr); }
+  .modulex-ayakkabi-numara-cetveli-akart { display: grid; align-content: start; gap: 8px; padding: 24px; border-radius: --yuvarlak--; background: --vurguBg--; color: --vurguText--; }
+  .modulex-ayakkabi-numara-cetveli-aet { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+  .modulex-ayakkabi-numara-cetveli-agir { display: flex; align-items: center; gap: 10px; padding: 6px 12px; border-radius: 12px; background: color-mix(in srgb, --vurguText-- 16%, transparent); transition: box-shadow 0.2s ease; }
+  .modulex-ayakkabi-numara-cetveli-aik { font-size: 30px; }
+  .modulex-ayakkabi-numara-cetveli-agirdi { width: 100%; min-height: 46px; border: 0; background: transparent; color: inherit; font: inherit; font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .modulex-ayakkabi-numara-cetveli-agirdi:focus { outline: none; }
+  .modulex-ayakkabi-numara-cetveli-agir:focus-within { box-shadow: 0 0 0 2px --vurguText--; }
+  .modulex-ayakkabi-numara-cetveli-aset { margin-block-start: 8px; font-size: 0.8rem; font-weight: 700; }
+  .modulex-ayakkabi-numara-cetveli-anum { font-size: clamp(2.6rem, 5vw, 3.6rem); font-weight: 850; line-height: 1; font-variant-numeric: tabular-nums; animation: modulex-ayakkabi-numara-cetveli-numara 0.4s ease both; }
+  .modulex-ayakkabi-numara-cetveli-adimlar { display: grid; align-content: center; gap: 12px; }
+  .modulex-ayakkabi-numara-cetveli-adim { display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-radius: 14px; background: --kartBg--; transition: transform 0.25s ease; }
+  .modulex-ayakkabi-numara-cetveli-adim:hover { transform: scale(1.015); }
+  .modulex-ayakkabi-numara-cetveli-ano { display: grid; place-items: center; flex: none; width: 34px; height: 34px; border: 2px solid --accent--; border-radius: 50%; color: --accentInk--; font-weight: 850; }
+  .modulex-ayakkabi-numara-cetveli-tkap { overflow-x: auto; border: 1px solid --cizgi--; border-radius: --yuvarlak--; }
+  .modulex-ayakkabi-numara-cetveli-tablo { min-width: 100%; border-collapse: separate; border-spacing: 0; font-variant-numeric: tabular-nums; }
+  .modulex-ayakkabi-numara-cetveli-tablo :is(th, td) { min-width: 66px; padding: 14px 12px; border-block-end: 1px solid --cizgi--; text-align: center; white-space: nowrap; transition: background-color 0.25s ease, color 0.25s ease; }
+  .modulex-ayakkabi-numara-cetveli-tablo tbody tr:last-child > * { border-block-end: 0; }
+  .modulex-ayakkabi-numara-cetveli-tablo thead th { background: --kartBg--; font-size: 1.05rem; font-weight: 850; }
+  .modulex-ayakkabi-numara-cetveli-tablo th[scope="row"], .modulex-ayakkabi-numara-cetveli-kose { position: sticky; inset-inline-start: 0; z-index: 1; min-width: 74px; border-inline-end: 1px solid --cizgi--; background: --bg--; color: --muted--; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-align: start; }
+  .modulex-ayakkabi-numara-cetveli-tablo thead .modulex-ayakkabi-numara-cetveli-kose { background: --kartBg--; }
+  .modulex-ayakkabi-numara-cetveli-tablo td.modulex-ayakkabi-numara-cetveli--sec { background-color: color-mix(in srgb, --accent-- 14%, --bg--); font-weight: 800; }
+  .modulex-ayakkabi-numara-cetveli-tablo th.modulex-ayakkabi-numara-cetveli--sec { background-color: --accent--; color: --accentText--; }
+  .modulex-ayakkabi-numara-cetveli-tnot { color: --muted--; font-size: 0.78rem; white-space: normal; }
+  .modulex-ayakkabi-numara-cetveli-tkap + .modulex-ayakkabi-numara-cetveli-cta { margin-block-start: 26px; }
+  @keyframes modulex-ayakkabi-numara-cetveli-numara { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: none; } }
+  @media (max-width: 768px) {
+    .modulex-ayakkabi-numara-cetveli--js .modulex-ayakkabi-numara-cetveli-olcum { grid-template-columns: minmax(0, 1fr); }
+    .modulex-ayakkabi-numara-cetveli-tablo :is(th, td) { min-width: 54px; padding: 12px 8px; }
+  }
+  .modulex-ayakkabi-numara-cetveli-bag { color: inherit; text-decoration: none; }
+  .modulex-ayakkabi-numara-cetveli-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-ayakkabi-numara-cetveli-mbaslik { font-size: 1.05rem; font-weight: 700; }
+  .modulex-ayakkabi-numara-cetveli-mmetin { color: --muted--; font-size: 0.95rem; }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ayakkabi-numara-cetveli :is(.modulex-ayakkabi-numara-cetveli-baslik, .modulex-ayakkabi-numara-cetveli-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ayakkabi-numara-cetveli-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ayakkabi-numara-cetveli { padding-inline: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-ayakkabi-numara-cetveli *, .modulex-ayakkabi-numara-cetveli *::before, .modulex-ayakkabi-numara-cetveli *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+<script>
+  (() => {
+    const P = "modulex-ayakkabi-numara-cetveli";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const numaraBul = (s, P, az) => {
+        const g = s.querySelector("[data-ayak]");
+        const kol = [...s.querySelectorAll("th[data-cm]")];
+        if (!g || !kol.length) return;
+        s.classList.add(P + "--js");
+        const kp = s.querySelector("[data-akap]");
+        if (kp) kp.hidden = false;
+        const out = s.querySelector("[data-anum]");
+        const kap = s.querySelector("[data-tkap]");
+        const sec = (k) => {
+          s.querySelectorAll("[data-k]").forEach((c) => c.classList.toggle(P + "--sec", c.dataset.k === String(k)));
+          const th = kol.find((x) => x.dataset.k === String(k));
+          if (out) out.textContent = th ? th.dataset.ad || "" : "—";
+          if (th && kap) {
+            const r = kap.getBoundingClientRect();
+            const b = th.getBoundingClientRect();
+            kap.scrollBy({ left: b.left + b.width / 2 - (r.left + r.width / 2), behavior: az ? "auto" : "smooth" });
+          }
+        };
+        const bul = () => {
+          const v = Number(String(g.value).replace(",", "."));
+          if (!Number.isFinite(v) || v <= 0) { sec(-1); return; }
+          const sira = kol.map((th) => ({ k: th.dataset.k, cm: Number(th.dataset.cm) })).sort((a, b) => a.cm - b.cm);
+          const u = sira.find((z) => z.cm >= v - 0.05) || sira[sira.length - 1];
+          sec(u.k);
+        };
+        g.addEventListener("input", bul);
+        bul();
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      numaraBul(s, P, az);
+    });
+  })();
+</script>

@@ -1,0 +1,63 @@
+{
+  "name": "Ayakkabı Numara Cetveli — ayak uzunluğundan numara bulan devrik ölçü tablosu",
+  "description": "Solda vurgu kartında ayak uzunluğu (cm) girişi ve önerilen numara; yanında numaralı ölçüm adımları (desing `olcuNot`). Altında devrik ölçü tablosu: sütunlar numaralar, satırlar EU · UK · US · cm; ilk sütun yapışkan, tablo yatay kaydırılır. Girilen uzunluğa uyan en küçük numara sütunu vurgulanır ve ortaya kaydırılır. Kayıt alanları: `baslik` (EU/TR numara) · `uk` · `us` · `cm`. JS yokken tablo ve adımlar tam, giriş kartı gizli. ders-programi-tablo ve kargo-desi-hesap'ın satır yönlü tablolarından farkı: devrik (sütun = numara) ve yapışkan satır başlıklı ölçü tablosu, girişten türeyen sütun vurgusu ve kaydırma; body/yuzuk-olcu-rehberi'nin yüzük çapı çizimi yerine ayak uzunluğu → numara eşlemesi. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık ve metin yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "steps",
+  "category": "module",
+  "subCategory": "size-converter",
+  "tags": [
+    "module",
+    "size-guide",
+    "converter",
+    "table",
+    "input",
+    "interactive",
+    "rtl",
+    "fabrika"
+  ],
+  "desing": {
+    "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "img": "",
+    "img2": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "cta2_ad": "",
+    "cta2_url": "",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f6f7f9)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguBg": "var(--mx-site-primary, #2563eb)",
+    "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+    "euAd": "EU",
+    "ukAd": "UK",
+    "usAd": "US",
+    "cmAd": "cm",
+    "ayakAd": "",
+    "sonucAd": "",
+    "olcuNot": "",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data",
+    "alanlar": {
+      "ikon": "madde ikonu (Material Symbols)",
+      "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+      "metin": "madde metni (dil sözlüğü)",
+      "url": "madde bağlantısı"
+    }
+  }
+}

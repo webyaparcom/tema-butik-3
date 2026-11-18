@@ -3,17 +3,23 @@
   "name": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "description": {
     "tr": "Vizyonumuz",
     "en": "Our vision",
-    "ar": "رؤيتنا"
+    "ar": "رؤيتنا",
+    "de": "Unsere Vision",
+    "ru": "Наше видение"
   },
   "keyword": {
     "tr": "Vizyon",
     "en": "vision, our vision, goals",
-    "ar": "الرؤية, رؤيتنا, الأهداف"
+    "ar": "الرؤية, رؤيتنا, الأهداف",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "path": "vizyon",
   "icon": "visibility",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Vizyonumuz</h2>\n<p>Gaziantep’te beden ve kumaş bilgisini en açık veren butik olmak.</p>",
     "en": "<h2>Our vision</h2>\n<p>To be the boutique in Gaziantep that is most open about sizes and fabrics.</p>",
-    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون البوتيك الأوضح في غازي عنتاب في معلومات المقاس والقماش.</p>"
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون البوتيك الأوضح في غازي عنتاب في معلومات المقاس والقماش.</p>",
+    "de": "<h2>Unsere Vision</h2>\n<p>Die Boutique in Gaziantep zu sein, die Größen- und Stoffwissen am klarsten vermittelt.</p>",
+    "ru": "<h2>Наше видение</h2>\n<p>Стать бутиком в Газиантепе, который яснее всех рассказывает о размерах и тканях.</p>"
   },
   "title": {
     "tr": "Vizyon",
     "en": "Vision",
-    "ar": "الرؤية"
+    "ar": "الرؤية",
+    "de": "Vision",
+    "ru": "Видение"
   },
   "date": "2026-11-16T20:26:09.395Z",
   "update": "2026-11-16T20:27:22.553Z",

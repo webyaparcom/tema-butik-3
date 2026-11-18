@@ -2,7 +2,9 @@
   "name": {
     "tr": "Konum",
     "en": "Location",
-    "ar": "الموقع"
+    "ar": "الموقع",
+    "de": "Standort",
+    "ru": "Местоположение"
   },
   "status": "play",
   "category": "s9vsdb3q7s",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Butik adresi, saatler ve harita.",
     "en": "Boutique address, hours and map.",
-    "ar": "عنوان البوتيك والساعات والخريطة."
+    "ar": "عنوان البوتيك والساعات والخريطة.",
+    "de": "Boutique-Adresse, Öffnungszeiten und Karte.",
+    "ru": "Адрес бутика, часы работы и карта."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Konum",
     "en": "Location",
-    "ar": "الموقع"
+    "ar": "الموقع",
+    "de": "Standort",
+    "ru": "Местоположение"
   },
   "keyword": {
     "tr": "iletişim",
     "en": "contact",
-    "ar": "اتصال"
+    "ar": "اتصال",
+    "de": "Kontakt",
+    "ru": "контакты"
   },
   "text": {},
   "update": "2026-11-16T20:27:22.539Z",

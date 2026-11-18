@@ -2,7 +2,9 @@
   "name": {
     "tr": "Beden",
     "en": "Sizes",
-    "ar": "المقاسات"
+    "ar": "المقاسات",
+    "de": "Größen",
+    "ru": "Размеры"
   },
   "status": "play",
   "category": "",
@@ -23,7 +25,9 @@
   "description": {
     "tr": "Göğüs çevresinden beden cetveli ve sık sorulanlar.",
     "en": "Size chart from bust measurement and FAQ.",
-    "ar": "جدول المقاسات حسب محيط الصدر والأسئلة الشائعة."
+    "ar": "جدول المقاسات حسب محيط الصدر والأسئلة الشائعة.",
+    "de": "Größentabelle nach Brustumfang und häufige Fragen.",
+    "ru": "Таблица размеров по обхвату груди и частые вопросы."
   },
   "spot": {
     "tr": "",
@@ -34,12 +38,16 @@
   "title": {
     "tr": "Beden",
     "en": "Sizes",
-    "ar": "المقاسات"
+    "ar": "المقاسات",
+    "de": "Größen",
+    "ru": "Размеры"
   },
   "keyword": {
     "tr": "beden tablosu, beden cetveli",
     "en": "size chart",
-    "ar": "جدول المقاسات"
+    "ar": "جدول المقاسات",
+    "de": "Größentabelle, Größenlineal",
+    "ru": "таблица размеров, размерная линейка"
   },
   "text": {},
   "update": "2026-11-16T20:27:22.523Z",

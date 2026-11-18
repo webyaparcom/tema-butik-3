@@ -3,17 +3,23 @@
   "name": {
     "tr": "Katalog",
     "en": "Catalogue",
-    "ar": "الكتالوج"
+    "ar": "الكتالوج",
+    "de": "Katalog",
+    "ru": "Каталог"
   },
   "description": {
     "tr": "Sonbahar 2026 kataloğu: üst giyim, dış giyim, aksesuar.",
     "en": "Autumn 2026 catalogue: tops, outerwear, accessories.",
-    "ar": "كتالوج خريف 2026: قطع علوية وملابس خارجية وإكسسوارات."
+    "ar": "كتالوج خريف 2026: قطع علوية وملابس خارجية وإكسسوارات.",
+    "de": "Katalog Herbst 2026: Oberbekleidung, Mäntel, Accessoires.",
+    "ru": "Каталог осень 2026: верхняя одежда, пальто, аксессуары."
   },
   "keyword": {
     "tr": "butik kataloğu, hazır giyim",
     "en": "boutique catalogue, ready-to-wear",
-    "ar": "كتالوج البوتيك، ملابس جاهزة"
+    "ar": "كتالوج البوتيك، ملابس جاهزة",
+    "de": "Boutique-Katalog, Fertigungskleidung",
+    "ru": "Каталог бутика, готовая одежда"
   },
   "path": "hizmetler",
   "icon": "checkroom",
@@ -34,7 +40,9 @@
   "title": {
     "tr": "Katalog",
     "en": "Catalogue",
-    "ar": "الكتالوج"
+    "ar": "الكتالوج",
+    "de": "Katalog",
+    "ru": "Каталог"
   },
   "date": "2026-11-16T20:26:09.633Z",
   "update": "2026-11-16T20:27:22.515Z"

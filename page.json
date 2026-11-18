@@ -5,12 +5,16 @@
       "name": {
         "tr": "Katalog",
         "en": "Catalogue",
-        "ar": "الكتالوج"
+        "ar": "الكتالوج",
+        "de": "Katalog",
+        "ru": "Каталог"
       },
       "description": {
         "tr": "Sonbahar 2026 kataloğu: üst giyim, dış giyim, aksesuar.",
         "en": "Autumn 2026 catalogue: tops, outerwear, accessories.",
-        "ar": "كتالوج خريف 2026: قطع علوية وملابس خارجية وإكسسوارات."
+        "ar": "كتالوج خريف 2026: قطع علوية وملابس خارجية وإكسسوارات.",
+        "de": "Katalog Herbst 2026: Oberbekleidung, Mäntel, Accessoires.",
+        "ru": "Каталог осень 2026: верхняя одежда, пальто, аксессуары."
       },
       "path": "hizmetler",
       "icon": "checkroom",
@@ -31,7 +35,9 @@
       "name": {
         "tr": "Beden",
         "en": "Sizes",
-        "ar": "المقاسات"
+        "ar": "المقاسات",
+        "de": "Größen",
+        "ru": "Размеры"
       },
       "status": "play",
       "id": "hakkimizda",
@@ -52,7 +58,9 @@
       "description": {
         "tr": "Göğüs çevresinden beden cetveli ve sık sorulanlar.",
         "en": "Size chart from bust measurement and FAQ.",
-        "ar": "جدول المقاسات حسب محيط الصدر والأسئلة الشائعة."
+        "ar": "جدول المقاسات حسب محيط الصدر والأسئلة الشائعة.",
+        "de": "Größentabelle nach Brustumfang und häufige Fragen.",
+        "ru": "Таблица размеров по обхвату груди и частые вопросы."
       }
     },
     {
@@ -60,12 +68,16 @@
       "name": {
         "tr": "Prova",
         "en": "Fitting",
-        "ar": "القياس"
+        "ar": "القياس",
+        "de": "Anprobe",
+        "ru": "Примерка"
       },
       "description": {
         "tr": "WhatsApp ya da e-postayla prova talebi (demo form).",
         "en": "Fitting request on WhatsApp or by e-mail (demo form).",
-        "ar": "طلب قياس عبر واتساب أو البريد (نموذج تجريبي)."
+        "ar": "طلب قياس عبر واتساب أو البريد (نموذج تجريبي).",
+        "de": "Probenanfrage per WhatsApp oder E-Mail (Demo-Formular).",
+        "ru": "Запрос на примерку через WhatsApp или электронную почту (демо-форма)."
       },
       "path": "teklif-al",
       "icon": "event",
@@ -85,7 +97,9 @@
       "name": {
         "tr": "Konum",
         "en": "Location",
-        "ar": "الموقع"
+        "ar": "الموقع",
+        "de": "Standort",
+        "ru": "Местоположение"
       },
       "status": "play",
       "id": "iletisim",
@@ -106,7 +120,9 @@
       "description": {
         "tr": "Butik adresi, saatler ve harita.",
         "en": "Boutique address, hours and map.",
-        "ar": "عنوان البوتيك والساعات والخريطة."
+        "ar": "عنوان البوتيك والساعات والخريطة.",
+        "de": "Boutique-Adresse, Öffnungszeiten und Karte.",
+        "ru": "Адрес бутика, часы работы и карта."
       }
     }
   ],

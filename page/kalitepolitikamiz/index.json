@@ -3,17 +3,23 @@
   "name": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "description": {
     "tr": "Kalite politikamız",
     "en": "Our quality policy",
-    "ar": "سياسة الجودة لدينا"
+    "ar": "سياسة الجودة لدينا",
+    "de": "Unsere Qualitätspolitik",
+    "ru": "Наша политика качества"
   },
   "keyword": {
     "tr": "Kalite Politikamız",
     "en": "quality policy, quality, continuous improvement",
-    "ar": "سياسة الجودة, الجودة, التحسين المستمر"
+    "ar": "سياسة الجودة, الجودة, التحسين المستمر",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "path": "kalitepolitikamiz",
   "icon": "verified",
@@ -29,12 +35,16 @@
   "text": {
     "tr": "<h2>Kalite Politikamız</h2>\n<p>Her parçanın kumaş içeriği etikette; prova ve kol/paça tadilatı ücretsiz; 14 gün değişim.</p>",
     "en": "<h2>Our quality policy</h2>\n<p>Fabric content on every tag; free fittings and sleeve/hem alterations; 14-day exchange.</p>",
-    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>محتوى القماش على كل بطاقة؛ قياس وتعديل الأكمام والحواف مجانًا؛ واستبدال خلال 14 يومًا.</p>"
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>محتوى القماش على كل بطاقة؛ قياس وتعديل الأكمام والحواف مجانًا؛ واستبدال خلال 14 يومًا.</p>",
+    "de": "<h2>Unsere Qualitätspolitik</h2>\n<p>Stoffzusammensetzung auf jedem Etikett; kostenlose Anprobe und Ärmel-/Hosenbein-Kürzungen; 14 Tage Umtausch.</p>",
+    "ru": "<h2>Наша политика качества</h2>\n<p>Состав ткани указан на каждом ярлыке; бесплатная примерка и подгонка рукавов/штанин; обмен в течение 14 дней.</p>"
   },
   "title": {
     "tr": "Kalite Politikamız",
     "en": "Quality Policy",
-    "ar": "سياسة الجودة"
+    "ar": "سياسة الجودة",
+    "de": "Qualitätspolitik",
+    "ru": "Политика качества"
   },
   "date": "2026-11-16T20:26:09.395Z",
   "update": "2026-11-16T20:27:22.556Z",

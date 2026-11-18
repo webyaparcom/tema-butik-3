@@ -4,12 +4,16 @@
   "description": {
     "tr": "Ardıç Butik: Şahinbey’de hazır giyim butiği; sezon kataloğu, beden cetveli, ücretsiz prova ve tadilat. Demo site; içerik kurgusaldır.",
     "en": "Ardic Butik: a ready-to-wear boutique in Sahinbey with a season catalogue, size chart, free fittings and alterations. Demo site; content is fictional.",
-    "ar": "أرديتش بوتيك: متجر ملابس جاهزة في شاهين بيه؛ كتالوج الموسم وجدول المقاسات وقياس وتعديل مجانيان. موقع تجريبي؛ المحتوى افتراضي."
+    "ar": "أرديتش بوتيك: متجر ملابس جاهزة في شاهين بيه؛ كتالوج الموسم وجدول المقاسات وقياس وتعديل مجانيان. موقع تجريبي؛ المحتوى افتراضي.",
+    "de": "Ardıç Butik: Modeboutique für Konfektionsmode in Şahinbey; Saisonkatalog, Größentabelle, kostenlose Anprobe und Änderungen. Demo-Website; Inhalte sind fiktiv.",
+    "ru": "Ardıç Butik: бутик готовой одежды в Şahinbey; сезонный каталог, таблица размеров, бесплатная примерка и ремонт одежды. Демо-сайт; содержимое вымышленное."
   },
   "keyword": {
     "tr": "butik, hazır giyim, beden tablosu, prova, tadilat, Gaziantep",
     "en": "boutique, ready-to-wear, size chart, fitting, alterations, Gaziantep",
-    "ar": "بوتيك، ملابس جاهزة، جدول المقاسات، قياس، تعديل، غازي عنتاب"
+    "ar": "بوتيك، ملابس جاهزة، جدول المقاسات، قياس، تعديل، غازي عنتاب",
+    "de": "Boutique, Fertigungsbekleidung, Größentabelle, Anprobe, Änderungsschneiderei, Gaziantep",
+    "ru": "бутик, готовая одежда, размерная таблица, примерка, ателье, Газиантеп"
   },
   "category": "Kurumsal",
   "name": "Ardıç Butik",
@@ -18,15 +22,27 @@
     "tr": true,
     "en": true,
     "ar": true,
-    "de": false,
-    "ru": false,
+    "de": true,
+    "ru": true,
     "es": false,
     "fr": false,
     "it": false,
     "ja": false,
     "zh": false,
     "ko": false,
-    "pt": false
+    "pt": false,
+    "fa": false,
+    "he": false,
+    "ur": false,
+    "nl": false,
+    "pl": false,
+    "uk": false,
+    "az": false,
+    "ka": false,
+    "el": false,
+    "bg": false,
+    "ro": false,
+    "hi": false
   },
   "logo": "logo.png",
   "multi": false,
